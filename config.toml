@@ -1,0 +1,10 @@
+baseURL = "https://sinancang.github.io/blog/"
+languageCode = "en-us"
+title = "My Personal Blog"
+theme = "hugo-PaperMod"
+publishDir = "docs"
+
+[params]
+  defaultTheme = "dark"
+  disableThemeToggle = true
+

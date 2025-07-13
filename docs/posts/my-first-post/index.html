@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Some messy thoughts on AI, responsibility, and why I don’t feel replaceable—yet | sinan.dev</title>
+<meta name="keywords" content="AI, reflection">
+<meta name="description" content="Breakthroughs in statistical modeling, combined with breakthroughs in hardware acceleration, specifically the efficient (parallel) computation of matrix operations, has enabled software programs that can “understand” semantics, and mimic human thought. Such advancements were long theorized and thought impossible, until a few years ago.
+Today, a Large Language Model (LLM as we call it), can accept an input text, and output the most appropriate next sequence of sentences given the large dataset of the internet. It is incredible to see this large corpora of human knowledge and information (the internet) laying the groundwork for the next big thing. It truly reminds me how ingenious the internet was/is, and how truly masterful human engineering can be.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/blog/posts/my-first-post/">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/blog/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/blog/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/my-first-post/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class=" dark" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/blog/" accesskey="h" title="sinan.dev (Alt + H)">sinan.dev</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Some messy thoughts on AI, responsibility, and why I don’t feel replaceable—yet
+    </h1>
+    <div class="post-meta"><span title='2025-07-12 17:47:50 -0700 PDT'>July 12, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Breakthroughs in statistical modeling, combined with breakthroughs in hardware acceleration, specifically the efficient (parallel) computation of matrix operations, has enabled software programs that can “understand” semantics, and mimic human thought. Such advancements were long theorized and thought impossible, until a few years ago.</p>
+<p>Today, a Large Language Model (LLM as we call it), can accept an input text, and output the most appropriate next sequence of sentences given the large dataset of the internet. It is incredible to see this large corpora of human knowledge and information (the internet) laying the groundwork for the next big thing. It truly reminds me how ingenious the internet was/is, and how truly masterful human engineering can be.</p>
+<p>By doing this, the model can mimic us, giving the impression of humanity. It passes the Turing test. Not only that, but it can also pass the LSAT, the SAT, and many more standardized examinations. It’s as if the internet was given a tongue and a mouth.</p>
+<p>It has seen use in many facets of life today. It has replaced many support agents (who were already in a fast-tracked path to extinction), has grabbed a fair share of the “search” market, and even threatens to replace corporate workers such as product managers, HR personnel, and even software engineers.</p>
+<p>Although I find the last point to be highly unlikely, there is no inherently distinct aspect of what I do as compared to these other jobs. I also seek and follow patterns. I also respond to e-mails, relay ideas, produce text, conversate. The code I write is by no means unique to me. It is crafted by many examples I’ve seen throughout my career, from sources like stack overflow, github, previous jobs, etc. These sources are also available to the machine, and thus it can outperform me in many facets of my job.</p>
+<p>So why aren’t I not convinced that it will replace me? Is it out of arrogance? Out of egotism? Well, I do not know. Maybe it stems from the many times I’ve tried to use it in my day-to-day, to produce accurate examples and code, and seen it fail. Or perhaps it is due to it’s lack of generalization, in that if there isn’t a similar problem in its data set compared to the one at hand, then it fails. Or maybe it is because I understand society and responsibility.</p>
+<p>We want entities taking actions. Entities that can be held responsible. Why is this? Well, if the action proves to be unreasonable, then we have someone to keep accountable. This makes sense, but automation isn’t anything new in the modern world. We have automated systems taking actions every day. It’s how our devices communicate, and how I’m able to write my thoughts into bits by hitting small keys on my laptop. You could argue that there is no “decision” here, and the action is completely decided by the operator: me. The programming itself isn’t the driver but the car.</p>
+<p>Well yes, but there are cases where this is more ambiguous. Like automated trading strategies deterministically finding discrepancies in the market. Or, control code that ensures a satellite decides to boost and increase its altitude to evade an obstruction.</p>
+<p>True, but all of these examples have nothing probabilistic about them. It is usually determined precisely, at  runtime, how the program will behave, given its current inputs. LLM’s are not like that, and that’s what makes them magical. They are probabilistic, and may respond to the same input in many different ways, all of which are semantically appropriate.</p>
+<p>But we don’t want a probabilistic software program making critical decision. Why? Because we can’t blame it for what it did. It is simply a program that carries out instructions, but it is also random. It is also hard to examine and troubleshoot mistakes and get to root causes. At one point, we say: well, it IS in fact random. We can tilt the weights in the direction we want it to behave in, but that’s as far as that goes. If we tilt too hard, it becomes boring and redundant. It becomes a deterministic software program, or a bunch of if statements. If we don’t, we can’t rely on it, as it is random. There is truly a beautiful paradox here, and potentially a limitation of information theory itself.</p>
+<p>Can we build a system that is both reliably useful and inherently unpredictable? Or does that break some fundamental boundary?</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/blog/tags/ai/">AI</a></li>
+      <li><a href="http://localhost:1313/blog/tags/reflection/">Reflection</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/blog/">sinan.dev</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

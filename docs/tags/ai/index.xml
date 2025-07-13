@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI on sinan.dev</title>
+    <link>http://localhost:1313/blog/tags/ai/</link>
+    <description>Recent content in AI on sinan.dev</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Jul 2025 17:47:50 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some messy thoughts on AI, responsibility, and why I don’t feel replaceable—yet</title>
+      <link>http://localhost:1313/blog/posts/my-first-post/</link>
+      <pubDate>Sat, 12 Jul 2025 17:47:50 -0700</pubDate>
+      <guid>http://localhost:1313/blog/posts/my-first-post/</guid>
+      <description>&lt;p&gt;Breakthroughs in statistical modeling, combined with breakthroughs in hardware acceleration, specifically the efficient (parallel) computation of matrix operations, has enabled software programs that can “understand” semantics, and mimic human thought. Such advancements were long theorized and thought impossible, until a few years ago.&lt;/p&gt;
+&lt;p&gt;Today, a Large Language Model (LLM as we call it), can accept an input text, and output the most appropriate next sequence of sentences given the large dataset of the internet. It is incredible to see this large corpora of human knowledge and information (the internet) laying the groundwork for the next big thing. It truly reminds me how ingenious the internet was/is, and how truly masterful human engineering can be.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
